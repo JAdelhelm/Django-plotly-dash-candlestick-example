@@ -8,7 +8,7 @@ I am using ``django-plotly-dash`` to create a beautiful looking candlestick char
 ## Quick start
 
     $ git clone https://github.com/JAdelhelm/Django-plotly-dash-candlestick-example.git
-    $ conda create --name django_env python --> When using Anaconda
+    $ conda create --name django_env python
     $ conda activate django_env
     $ cd Django-plotly-dash-candlestick-example/
     $ pip install -r requirements.txt
