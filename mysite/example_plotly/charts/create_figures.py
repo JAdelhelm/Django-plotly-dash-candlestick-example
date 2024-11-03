@@ -69,12 +69,12 @@ def create_candlestick_figure(data, stock_symbol) -> go.Figure:
                     "size": 18
                 }
             },
-            title_subtitle=dict({
-                "text":f"(adjusted chart) - historical split/dividend events"}),
-            title_subtitle_font=dict({
-                "color":"#ffffff",
-                "size" : 16
-            }),
+            # title_subtitle=dict({
+            #     "text":f"(adjusted chart) - historical split/dividend events"}),
+            # title_subtitle_font=dict({
+            #     "color":"#ffffff",
+            #     "size" : 16
+            # }),
 
             dragmode="pan",  # Set pan as the default drag mode
             margin={"t": 150, "l": 50, "r": 50, "b": 50},

@@ -12,12 +12,13 @@
   <meta name="author" content="SomeSite">
 
   <!-- Load Bootstrap -->
-  {% load bootstrap5 %}
-  {% load static %}
+  {# Load the tag library #}
+  {% load django_bootstrap5 %}
 
- 
+  {# Load CSS and JavaScript #}
+  {% bootstrap_css %}
   {% bootstrap_javascript %}
-  
+
   {% block links %}
   {% endblock %}
   

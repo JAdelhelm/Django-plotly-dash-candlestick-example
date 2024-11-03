@@ -37,7 +37,7 @@ APP_REGISTRY = {
 INSTALLED_APPS = [
     'example_plotly.apps.ExamplePlotlyConfig',
     
-    'bootstrap5',
+    'django_bootstrap5',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
 
 
@@ -158,11 +158,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR / "staticfiles"  # Directory for collectstatic command
+STATIC_ROOT = BASE_DIR / "staticfiles"  # Directory for collectstatic command
 
 # Include additional directories containing static files
 STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles",
+    BASE_DIR / "static",
 ]
 
 
