@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load plotly_dash %}
+
+{% block content %}
+        <h1> Stock - Candlestick {{app_name}} </h1>
+
+        <div class="{% plotly_class name=app_name %}">
+            {% plotly_app name=app_name ratio=1.0 %}
+        </div>
+{% endblock %}
+

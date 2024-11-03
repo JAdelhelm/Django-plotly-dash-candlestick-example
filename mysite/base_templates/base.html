@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<!-- <html lang="en"   data-theme="dark" > -->
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <meta name="author" content="SomeSite">
+
+  <!-- Load Bootstrap -->
+  {% load bootstrap5 %}
+  {% load static %}
+
+ 
+  {% bootstrap_javascript %}
+  
+  {% block links %}
+  {% endblock %}
+  
+
+  {% bootstrap_css %}
+ 
+
+  <!-- Fallback if JavaScript is disabled -->
+  <noscript>Your browser does not support JavaScript or it is disabled.</noscript>
+  
+  <!-- External Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+  <!-- Title Block -->
+  <title>Website</title>
+</head>
+
+<body>
+
+
+  <div class="main-content">
+
+
+
+  
+    <div class="container-fluid">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+
+  </div>
+      
+  
+</body>
+
+
+</html>
