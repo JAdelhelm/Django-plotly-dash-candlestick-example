@@ -1,8 +1,8 @@
 # Django-plotly-dash-candlestick-example
 
-I am using ``django-plotly-dash`` to visualize candlestick charts - https://github.com/GibbsConsulting/django-plotly-dash.
-
 ![Alt Text](./preview.gif)
+
+I am using ``django-plotly-dash`` to create a beautiful looking candlestick chart - https://github.com/GibbsConsulting/django-plotly-dash.
 
 
 ## Quick start
