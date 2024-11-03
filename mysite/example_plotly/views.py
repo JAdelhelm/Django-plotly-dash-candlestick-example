@@ -1,3 +1,6 @@
+from typing import Any
+from django.http import HttpRequest
+from django.http.response import HttpResponse as HttpResponse
 from django.views.generic import ListView, TemplateView
 # Create your views here.
 from .charts.plotly_app import create_dash_app
@@ -8,6 +11,9 @@ class PlotlyExampleView(TemplateView):
     template_name = "example.html"
     context_object_name = "details" 
 
+    def dispatch(self, request: HttpRequest, *args: Any, **kwargs: Any) -> HttpResponse:
+        
+        return super().dispatch(request, *args, **kwargs)
 
      
     def get_context_data(self, **kwargs):
